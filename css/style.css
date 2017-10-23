@@ -1,0 +1,259 @@
+/* generic styles */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.text--green{
+    color: #3ecf8e;
+}
+.text--white{
+    color: #fff;
+}
+.text--blue{
+    color: #33276F;
+}
+.button{
+    border: 0;
+}
+.button--bg-white{
+    background-color: #fff;
+}
+.button--bg-green{
+    background-color: #3ecf8e;
+}
+.button--text-white{
+    color: #fff;
+}
+.button--text-green{
+    color: #3ecf8e;
+}
+.button--raised{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.margin--left{
+    margin-left: 20px;
+}
+.margin--top{
+    margin-top: 50px;
+}
+.text--center{
+    text-align: center;
+}
+.text--right{
+    text-align: right;
+}
+
+/* nav style */
+nav{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    line-height: 50px;
+    vertical-align: center;
+    color: #fff;
+}
+nav .brand-logo{
+    font-size: 1.2em;
+}
+nav ul{
+    list-style: none;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+}
+
+/* homepage style  */
+#home{
+    display: block;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 100vh ;
+}
+.top__skew{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-12deg); 
+    transform-origin: 0;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+}
+.top__intro{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.top__intro .columns{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.top__intro .columns p{
+    max-width: 500px;
+}
+
+.curriculum{
+    padding-top: 20px;
+}
+.curriculum hr{
+    width: 100px;
+    height: 1px;
+    display: block;
+    background-color: #3ecf8e;
+    margin-top: -15px;
+}
+
+.testimonial{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.testimonial:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 180%;
+    transform: skewY(-12deg);
+    z-index: -1;
+    background-color: #f6f9fc;
+}
+
+.offer{
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.benefit{
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(30deg,#f6f9fc 15%,#fff 70%,#fff 94%);
+}
+.benefit__column{
+    padding-right: 20px;
+}
+.benefit__column:nth-child(3n+1){
+    margin-left: 0;
+}
+.benefit__column:nth-child(3n){
+    margin-right: 0;
+}
+.benefit__column hr{
+    width: 25px;
+    height: 1px;
+    display: block;
+    background-color: #3ecf8e;
+    margin-top: -5px;
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+}
+.info__box{
+    max-width: 300px;
+}
+
+.auth{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    padding: 100px 0;
+    background-color: #f6f9fc;
+}
+.auth__column{
+    position: relative;
+}
+.auth__box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    transform: translateX(-50%);
+    box-shadow: 0px 1px 20px 5px rgba(0,0,0,0.1);
+}
+.auth__header{
+    max-width: 150px;
+    font-weight: bold;
+}
+.auth__box input[type=text],.auth__box input[type=email]{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    margin-top: 20px;
+    font-size: 12px;
+    width: 100%;
+}
+.auth__signup{
+    padding: 0 50px;
+}
+.input__firstaname{}
+.input__email{}
+
+
+.syllabus{
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+}
+.syllabus hr{
+    width: 100px;
+    height: 1px;
+    display: block;
+    background-color: #3ecf8e;
+    margin-top: -5px;
+}
+.syllabus__column:nth-child(2n+1){
+    margin-left: 0;
+}
+.syllabus__column tr td{
+    border: 0;
+}
+.syllabus__column tr:not(:nth-child(2n)){
+    background-color: #f6f9fc;
+}
+
+
+/* footer style */
+.footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 0 0;
+    background-color: #33276F;
+}
+
+.footer__list{
+    display: inline-block;
+    list-style: none;
+}
+.footer__list:not(:last-child):not(:first-child){
+    padding: 0 20px;
+}
